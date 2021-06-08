@@ -31,7 +31,7 @@ export default function News({ news }) {
 // }
 
 export async function getStaticProps() {
-  const res = await fetch(`${API_URL}/api/news`);
+  const res = await fetch(`${API_URL}/sports`);
   const news = await res.json();
 
   return {
